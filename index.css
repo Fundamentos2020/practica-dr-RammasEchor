@@ -1,0 +1,177 @@
+*   {
+    /* border: solid black 1px ; */
+}
+
+.col-1 { width: 8.33% ; }
+.col-2 { width: 16.66% ; }
+.col-3 { width: 25% ; }
+.col-4 { width: 33.33% ; }
+.col-5 { width: 41.66% ; }
+.col-6 { width: 50% ; }
+.col-7 { width: 58.33% }
+.col-8 { width: 66.66% ; }
+.col-9 { width: 75% ; }
+.col-10 { width: 83.33% ; }
+.col-11 { width: 91.66% ; }
+.col-12 { width: 100% ; }
+
+
+
+.header {
+    background-color: brown ;
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center ;
+    padding: 10px ;
+}
+
+.flexbox_imagenes   {
+    display: flex ;
+    flex-direction: row ;
+    flex: 1 1 auto ;
+    box-sizing: border-box ;
+    text-align: center ;
+    margin-top: 10px ;
+    margin-bottom: 20px ;
+}
+
+.flexbox_imagenes > div  {
+    border: solid gray 1px ;
+}
+
+.flexbox_imagenes img   {
+    display: block ;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.flexbox_imagenes span  {
+    margin-bottom: 10px ;
+}
+
+.div_bottom {
+    margin-top: 20px ;
+    border-bottom: gray solid 1px ;
+}
+
+.flexbox_colores    {
+    display: flex ;
+    flex: row wrap ;
+    flex: 1 1 auto ;
+    width: 100% ;
+    color: white ;
+}
+
+.flexbox_colores > div   {
+    width: 100% ;
+    text-indent: 5% ;
+    padding: 10px ;
+}
+
+.colores h2   {
+    text-align: center ;
+}
+
+#rojo   {
+    background-color: red ;
+}
+#morado   {
+    background-color: purple ;
+}
+#azul   {
+    background-color: blue ;
+}
+#verde   {
+    background-color: green ;
+}
+#amarillo   {
+    background-color: yellow ;
+}
+
+#naranja   {
+    background-color: orange ;
+}
+
+.elementos_flex {
+    display: flex ;
+    flex-flow: row  ;
+    flex: 1 1 auto ;
+    background-color: orange ;
+    padding-top: 200px ;
+    padding-bottom: 200px ;
+    width: 100% ;
+}
+
+.elementos_flex > div {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: large ;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    text-align: center ;
+    padding-top: 50px ;
+    padding-bottom: 50px ;
+    margin-left: 40px ;
+    margin-right: 40px ;
+    width: 100% ;
+    background-color: blue ;
+}
+
+.left   {
+    margin-left: 0px ;
+}
+
+.right  {
+    margin-right: 0px ;
+}
+
+.flex h2   {
+    text-align: center ;
+}
+
+.pie    {
+    margin-top: 10px ;
+    text-align: center ;
+    padding-top: 25px ;
+    padding-bottom: 0px ;
+    color: white ;
+    background-color: brown ;
+    height: 50px ;
+}
+
+@media (max-width: 768px )  {
+    [class*="flexbox_imagenes"]    {
+        flex-wrap: wrap ;
+    }
+
+    [class="col-4"] {
+        width: 100% ;
+    }
+
+    [class*="flexbox_imagenes"] img   {
+        width: 100% ;
+    }
+
+    [class*="flexbox_imagenes"] div  {
+        width: 50% ;
+    }
+
+    [class*="elementos_flex"]   {
+        flex-wrap: wrap ;
+    }
+
+    [class*="elementos_flex"]  div {
+        width: 40px ;
+        margin-top: 50px ;
+        margin-bottom: 50px ;
+    }
+
+    [class*="flexbox_colores"]  {
+        flex-wrap: wrap ;
+    }
+
+    [class*="flexbox_colores"]  div {
+        width: 20% ;
+        margin-top: 50px ;
+        margin-bottom: 50px ;
+    }
+}
